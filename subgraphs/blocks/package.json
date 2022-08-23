@@ -1,0 +1,19 @@
+{
+  "name": "blocks",
+  "description": "PancakeSwap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:pancakeswap/pancake-subgraph.git",
+  "author": "PancakeSwap",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "create-subgraph": "graph create spurdex/blocks --node https://thegraph.spurdex.exchange/deploy/",
+    "deploy": "graph deploy --product hosted-service spurdex/blocks --node https://thegraph.spurdex.exchange/deploy/ --ipfs https://thegraph.spurdex.exchange/ipfs/",
+    "remove-subgraph": "graph remove spurdex/blocks --node https://thegraph.spurdex.exchange/deploy/",
+    "watch-subgraph": "graph deploy domain/graph-name --watch --debug --node https://thegraph.spurdex.exchange/deploy/ --ipfs https://thegraph.spurdex.exchange/ipfs/",
+    "create-local": "graph create spurdex/blocks --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy spurdex/blocks --node http://127.0.0.1:8020 --ipfs http://127.0.0.1:5001",
+    "remove-local": "graph remove spurdex/blocks --node http://127.0.0.1:8020"
+  }
+}
