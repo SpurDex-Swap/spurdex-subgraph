@@ -6,7 +6,7 @@ import { log } from "@graphprotocol/graph-ts";
 
 let WBNB_ADDRESS = "0x7c827e6b3ea27b2f726e036d94b2b5ed18da87a9";
 let BUSD_WBNB_PAIR = "0x0a5f83af1524936029d5f94da306e62cbf851008"; // created block 307036
-let USDT_WBNB_PAIR = "0x2070bea46483aba1f7184c3346d9788f57dd23ab"; // created block 307062
+let USDT_WBNB_PAIR = "0x228c1f6dad6e2d2f82f9c048fe3f6249b4dfe2ce"; // created block 307062
 
 export function getBnbPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
@@ -44,7 +44,7 @@ export function getBnbPriceInUSD(): BigDecimal {
 let WHITELIST: string[] = [
   "0x7c827e6b3ea27b2f726e036d94b2b5ed18da87a9", // WBNB
   "0xb3a94227032856b71e522984c79d6de68bef6bca", // BUSD
-  "0xebe8262a7111e5acd0e5de8675f49f35842044db", // USDT
+  "0xac27a9a8c887c5495584fcb0dbdb13d96b7275fe", // USDT
   // "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d", // USDC
   // "0x23396cf899ca06c4472205fc903bdb4de249d6fc", // UST
   // "0x43f5e794c6167a7bdea2cb930458fb0ae63593bf", // BTCB
